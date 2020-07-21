@@ -1,2 +1,2 @@
 # logbook-database
-A personl project for my writing.
+A personal project for my writing.
