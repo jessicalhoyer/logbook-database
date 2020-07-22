@@ -1,0 +1,226 @@
+/* 
+===============================================
+Main Stylesheet
+By Jess Hoyer
+===============================================
+*/
+
+/* main elements */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#000;
+	color:#ccc;
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:0.9em;
+}
+
+/* containers */
+
+#wrapper {
+	width:70%;
+	margin:auto;
+}
+
+#main {
+	background-color:#202020;
+	margin:1em;
+	padding:2em;
+}
+
+#dynamic_content {
+	margin-top:2em;
+}
+
+#threadinfo {
+	background-color:#333;
+	padding:1em;
+	margin-bottom:1em;
+}
+
+#threadcontent p, .tabcontent p {
+	margin:1.5em;
+	font-size:0.9em;
+	line-height:1.7em;
+	text-align:justify;
+	font-family:'Open Sans', helvetica, sans-serif;
+}
+
+.threadlist {
+	background-color:#333;
+	padding:1em;
+	margin:1em;
+}
+
+#threadinfo p, .threadlist p {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:0.9em;
+}
+
+/* navigation menu */
+
+nav {
+	
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#202020;
+	position:fixed;
+	top:0;
+	width:100%;
+	text-align:center;
+	box-shadow:0px 1px 9px black;
+}
+
+li {
+	float:left;
+	display:inline;
+	padding:0.7em 0.5em;
+}
+
+#pagination {
+	margin-bottom:1em;
+	text-align:center;
+}
+
+#pagination a {
+	background-color:#333;
+	padding:0.4em;
+}
+
+/* links */
+
+a, a:active, a:visited {
+	color:#a2a2a2;
+	text-decoration:none;
+	
+	transition:all 0.6s ease;
+}
+
+a:hover {
+	color:#fff;
+}
+
+.button {
+	background-color:#333;
+	width:20%;
+	text-align:center;
+	margin:auto;
+	padding:1em;
+	
+	transition: all 0.6s ease;
+}
+
+.button:hover {
+	background-color:#444;
+}
+
+
+.menulink {
+	background-color:#333;
+	padding:0.4em;
+	margin:0.4em;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	
+	transition:all 0.6s ease;
+}
+
+.menulink:hover, .menulink:active {
+	background-color:#444;
+	cursor:pointer;
+}
+
+
+/* headings and text styles */
+
+h1 {
+	color:#fff;
+	text-shadow:1px 1px 20px #fff;
+	font-family:'Quattrocento', georgia, serif;
+	text-align:center;
+	font-weight:normal;
+	letter-spacing:0.4em;
+	font-size:3em;
+	margin-top:2em;
+}
+
+h2 {
+	color:#fff;
+	font-family:'Quattrocento', georgia, serif;
+	font-weight:normal;
+	text-align:center;
+	font-size:2em;
+}
+
+h3 {
+	font-family:'Quattrocento', georgia, serif;
+	font-weight:normal;
+	font-size:1.4em;
+}
+
+
+hr {
+  display:block;
+  margin:3em auto;
+  border:1px solid #333;
+}
+
+.chartitle, .threadtitle {
+	font-size:4em;
+	font-family:'Quattrocento',cursive;
+	text-align:center;
+	letter-spacing:5px;
+	text-transform:capitalize;
+	font-variant:small-caps;
+}
+
+.heading {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:1.5em;
+	letter-spacing:3px;
+	font-weight:300;
+	border-bottom:1px solid #CCC;
+	text-transform:uppercase;
+	text-align:left;
+	padding:10px;
+	margin:10px 5px 10px 0;
+}
+
+.q {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:1em;
+	text-align:left;
+	font-weight:300;
+	text-transform:uppercase;
+	margin-right:0.5em;
+	color:#999;
+}s
+
+
+/* form elements */
+
+label {
+	margin:0.5em;
+}
+
+input, textarea, select, option {
+	background-color:#333;
+	color:#ccc;
+	border:1px solid #111;
+	padding:0.3em;
+	margin:0 0.5em;
+}
+
+.searchbar {
+	margin:1em 0;
+	text-align:center;
+}
