@@ -29,9 +29,9 @@
 
 <div id="main">
 
-<h2>Search for Equine Characters</h2>
+<h2>Search for Characters</h2>
 
-<form class="searchbar" method="get" action="characters-equine.php">
+<form class="searchbar" method="get" action="characters-view.php">
 <label for="query">Search Query:</label>
 <input type="text" name="query" id="query"/>
 
@@ -72,20 +72,20 @@ if (isset($_GET['search'])) {
 	$ob_list = $_GET['order_by'];
 	
 	if ($sb_list == "sb_char_name") {
-		$query = "SELECT * FROM EquineCharacters WHERE CharName = '$query_value'";
-		$total_pages_sql = "SELECT COUNT(*) FROM EquineCharacters WHERE CharName = '$query_value';";
+		$query = "SELECT * FROM Characters WHERE CharName = '$query_value'";
+		$total_pages_sql = "SELECT COUNT(*) FROM Characters WHERE CharName = '$query_value';";
 	}
 	else if ($sb_list == "sb_creation_date") {
-		$query = "SELECT * FROM EquineCharacters WHERE CreationDate = $query_value";
-		$total_pages_sql = "SELECT COUNT(*) FROM EquineCharacters WHERE CreationDate = $query_value;";
+		$query = "SELECT * FROM Characters WHERE CreationDate = $query_value";
+		$total_pages_sql = "SELECT COUNT(*) FROM Characters WHERE CreationDate = $query_value;";
 	}
 	else if ($sb_list == "sb_alliance") {
-		$query = "SELECT * FROM EquineCharacters WHERE Alliance = '$query_value'";
-		$total_pages_sql = "SELECT COUNT(*) FROM EquineCharacters WHERE Alliance = '$query_value';";
+		$query = "SELECT * FROM Characters WHERE Alliance = '$query_value'";
+		$total_pages_sql = "SELECT COUNT(*) FROM Characters WHERE Alliance = '$query_value';";
 	}
 	else if ($sb_list == "sb_gender") {
-		$query = "SELECT * FROM EquineCharacters WHERE Gender = '$query_value'";
-		$total_pages_sql = "SELECT COUNT(*) FROM EquineCharacters WHERE Gender = '$query_value';";
+		$query = "SELECT * FROM Characters WHERE Gender = '$query_value'";
+		$total_pages_sql = "SELECT COUNT(*) FROM Characters WHERE Gender = '$query_value';";
 	}
 	
 	if ($ob_list == "ob_alphabetical") {
