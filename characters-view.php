@@ -9,8 +9,6 @@
 	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
 	
 	<link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
-	
-	
 </head>
 <body>
 
